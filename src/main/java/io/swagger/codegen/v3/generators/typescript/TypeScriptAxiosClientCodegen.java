@@ -41,7 +41,7 @@ public class TypeScriptAxiosClientCodegen extends AbstractTypeScriptClientCodege
         outputFolder = "generated-code/typescript-axios";
         LOGGER.info("Template folder: " + this.templateDir());
         LOGGER.info("Template engine: " + this.getTemplateEngine());
-        reservedWords.add("query");
+        // reservedWords.add("query"); // brucecham 不确定这个关键字有什么作用，暂时去掉了
 
         // Custom CLI options
         this.cliOptions.add(new CliOption(NPM_NAME, "The name under which you want to publish generated npm package"));
